@@ -1,2 +1,2 @@
-# stevephan
-My personal portfolio website.
+# stevephan.io
+My personal portfolio website using Django.
