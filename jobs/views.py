@@ -3,5 +3,5 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render
 
-def steve(request):
-    return render(request, 'jobs/steve.html')
+def home(request):
+    return render(request, 'jobs/home.html')
