@@ -41,33 +41,14 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1 class="jumbotron-heading">Steve Phan</h1>
-      <p class="lead text-muted">Hi my name is Steve! I enjoy photography and the outdoors!</p>
-      <p>
-        <a href="mailto:stevephan@virginia.edu" class="btn btn-primary my-2">Email Me</a>
-        <a href="https://github.com/stevephan98" class="btn btn-secondary my-2">Github</a>
-      </p>
+      <h1 class="jumbotron-heading">Job Details</h1>
+      <p class="lead text-muted">{{ job.summary }}</p>
       <img src="{% static 'pfp.jpeg' %}" height=300></img>
+      <p>
+        <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+      </p>
     </div>
   </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row">
-            {% for job in jobs.all %}
-            
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="{{ job.image.url }}"></img>
-            <div class="card-body">
-              <p class="card-text">{{ job.summary }}</p>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-
-
 </main>
 
 <script src="{% static 'jquery-3.4.1.min.js' %}" ></script>
