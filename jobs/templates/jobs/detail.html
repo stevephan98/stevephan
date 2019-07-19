@@ -14,7 +14,6 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
 
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -41,9 +40,9 @@
 
   <section class="jumbotron text-center">
     <div class="container">
+      <img src="{{ job.image.url }}" height=300></img>
       <h1 class="jumbotron-heading">Job Details</h1>
       <p class="lead text-muted">{{ job.summary }}</p>
-      <img src="{{ job.image.url }}" height=300></img>
       <p>
         <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
       </p>
