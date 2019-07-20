@@ -25,7 +25,7 @@ SECRET_KEY = '&w^2m!#4b9=r5x!75=9&!k4e+r$=l2t*(c&7bj$3p*n9=q_340'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['murmuring-reef-35999.herokuapp.com', 'stevephan.info', 'www.stevephan.info']
+ALLOWED_HOSTS = ['murmuring-reef-35999.herokuapp.com', 'stevephan.info', 'www.stevephan.info', 'localhost', '127.0.0.1']
 
 
 # Application definition
